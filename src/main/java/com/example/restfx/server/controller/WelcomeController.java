@@ -53,4 +53,10 @@ public class WelcomeController {
         }
         return new WelcomeMessage(message, new Date());
     }
+    
+    @RequestMapping("/")
+    public @ResponseBody String root(){
+        return "Hello";
+    }
+    
 }
